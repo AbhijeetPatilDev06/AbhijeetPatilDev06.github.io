@@ -305,19 +305,59 @@ a{
 }
 
 /* ===========================
-   TIMELINE
+   TIMELINE MAP STYLE
 =========================== */
 
 .timeline{
+    position:relative;
+
     display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+
     gap:30px;
+
+    flex-wrap:nowrap;
+
+    margin-top:80px;
 }
+
+/* Road */
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:8%;
+    right:8%;
+
+    top:50%;
+
+    height:10px;
+
+    background:
+    repeating-linear-gradient(
+        to right,
+        #444 0px,
+        #444 40px,
+        transparent 40px,
+        transparent 70px
+    );
+
+    transform:translateY(-50%);
+
+    z-index:0;
+}
+
+/* Map Stops */
 
 .timeline-item{
 
-    width:300px;
+    position:relative;
+
+    width:320px;
 
     background:#111;
 
@@ -325,28 +365,137 @@ a{
 
     border-radius:20px;
 
-    padding:30px;
+    padding:35px 25px;
 
     text-align:center;
 
     transition:.3s;
+
+    z-index:2;
+}
+
+/* Location Marker */
+
+.timeline-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:30px;
+    height:30px;
+
+    border-radius:50%;
+
+    background:#f6c90e;
+
+    border:6px solid #050505;
+
+    top:-55px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    box-shadow:
+    0 0 20px rgba(246,201,14,.5);
+}
+
+/* Marker Line */
+
+.timeline-item::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:4px;
+
+    height:35px;
+
+    background:#f6c90e;
+
+    top:-35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
 }
 
 .timeline-item h3{
     color:#f6c90e;
-    font-size:30px;
-    margin-bottom:10px;
+    font-size:38px;
+    margin-bottom:15px;
 }
 
 .timeline-item h4{
-    margin-bottom:10px;
+    margin-bottom:15px;
+    line-height:1.4;
+}
+
+.timeline-item p{
+    color:#ddd;
 }
 
 .timeline-item:hover{
 
-    transform:translateY(-6px);
+    transform:translateY(-10px);
 
     border-color:#f6c90e;
+
+    box-shadow:
+    0 0 25px rgba(246,201,14,.2);
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+    .timeline{
+
+        flex-direction:column;
+
+        gap:70px;
+    }
+
+    .timeline::before{
+
+        left:50%;
+
+        top:0;
+        bottom:0;
+
+        width:10px;
+        height:100%;
+
+        transform:translateX(-50%);
+
+        background:
+        repeating-linear-gradient(
+            to bottom,
+            #444 0px,
+            #444 40px,
+            transparent 40px,
+            transparent 70px
+        );
+    }
+
+    .timeline-item{
+
+        width:100%;
+        max-width:500px;
+    }
+
+    .timeline-item::before{
+
+        left:50%;
+        top:-50px;
+    }
+
+    .timeline-item::after{
+
+        left:50%;
+        top:-30px;
+    }
 }
 
 /* ===========================
