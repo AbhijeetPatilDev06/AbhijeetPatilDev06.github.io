@@ -1,402 +1,686 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Abhijeet Patil | Unity Developer</title>
-
+    <title>Abhijeet Patil | Technical Game Architect &amp; Unity Developer</title>
     <meta name="description"
-        content="Abhijeet Patil - Unity Developer, World Designer, and Lead Map Designer specializing in simulation games, open-world environments, vehicle systems, and gameplay programming.">
+        content="Abhijeet Patil is a Technical Game Architect (TGA) and Unity Developer from India. Working on Laila Majnu at Its A Game Studio, and creator of Indian Tractor Off-Roading (90,000+ downloads).">
+    <meta name="author" content="Abhijeet Patil">
+    <meta name="theme-color" content="#0b0c0f">
+    <link rel="canonical" href="https://abhijeetpatildev06.github.io/">
 
-    <meta name="keywords"
-        content="Unity Developer, Game Developer, Unity Programmer, Open World Designer, Map Designer, Laila Majnu, C#, Android Games, Simulation Games">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Abhijeet Patil">
+    <meta property="og:title" content="Abhijeet Patil | Technical Game Architect &amp; Unity Developer">
+    <meta property="og:description"
+        content="Game architecture, Unity development and open-world design. Technical Game Architect on Laila Majnu.">
+    <meta property="og:url" content="https://abhijeetpatildev06.github.io/">
+    <meta property="og:image" content="https://abhijeetpatildev06.github.io/assets/social/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Abhijeet Patil, Technical Game Architect and Unity Developer, with a view of Greater West City from Laila Majnu">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Abhijeet Patil | Technical Game Architect &amp; Unity Developer">
+    <meta name="twitter:description"
+        content="Game architecture, Unity development and open-world design. Technical Game Architect on Laila Majnu.">
+    <meta name="twitter:image" content="https://abhijeetpatildev06.github.io/assets/social/og-image.jpg">
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    <link rel="icon" href="assets/social/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/social/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/social/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <link rel="preload" as="image" href="assets/optimized/profile-640.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abhijeet Patil",
+        "jobTitle": "Technical Game Architect",
+        "url": "https://abhijeetpatildev06.github.io/",
+        "image": "https://abhijeetpatildev06.github.io/assets/optimized/profile-640.webp",
+        "worksFor": { "@type": "Organization", "name": "Its A Game Studio" },
+        "knowsAbout": ["Game Architecture", "Unity", "C#", "Game Development", "Open-World Map Design", "Vehicle Systems", "AI Traffic Systems"],
+        "sameAs": [
+            "https://github.com/AbhijeetPatilDev06",
+            "https://www.linkedin.com/in/abhijeet-dev/",
+            "https://www.instagram.com/imdevlucky"
+        ]
+    }
+    </script>
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav class="navbar">
+    <!-- ================= HEADER / NAV ================= -->
+    <header class="site-header" id="top">
+        <nav class="nav container" aria-label="Main">
+            <a href="#home" class="brand" aria-label="Abhijeet Patil, back to top">
+                <span class="brand-mark" aria-hidden="true">AP</span>
+                <span class="brand-name">Abhijeet Patil</span>
+            </a>
 
-        <div class="logo"> Game Developer </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu"
+                aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
 
-        <ul>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#featured">Work</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <main id="main">
 
-        </ul>
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
 
-    </nav>
-
-    <!-- ================= HERO ================= -->
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <div class="hero-logos">
-
-                <img src="assets/logos/adventurousmind.png" alt="Adventurous Mind Games">
-                <img src="assets/logos/indiantractor off-roading.png" alt="Indian Tractor Off-Roading">
-                <img src="assets/logos/itsagame.png" alt="Its A Game Studio">
-                <img src="assets/logos/lailamajnu.png" alt="Laila Majnu">
-
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-grid"></div>
+                <svg class="hero-roads" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+                    <path class="road road-1" d="M-20 520 C 220 500, 330 380, 520 380 S 820 300, 1220 120" />
+                    <path class="road road-2" d="M180 720 C 220 560, 360 520, 420 420 S 470 200, 640 -20" />
+                    <path class="road road-3" d="M-20 220 C 200 260, 420 200, 600 260 S 960 420, 1220 400" />
+                    <path class="road road-4" d="M760 720 C 780 600, 860 520, 980 480 S 1140 380, 1220 300" />
+                    <circle class="node" cx="520" cy="380" r="4" />
+                    <circle class="node" cx="600" cy="260" r="4" />
+                    <circle class="node" cx="980" cy="480" r="4" />
+                    <circle class="node" cx="420" cy="420" r="4" />
+                </svg>
+                <div class="hero-vignette"></div>
             </div>
 
-            <h1>ABHIJEET PATIL</h1>
-
-            <h2>
-                Unity Developer • World Designer • Map Creator
-            </h2>
-
-            <p>
-
-                Unity Developer specializing in simulation games,
-                vehicle systems, gameplay programming,
-                AI mechanics, open-world environments,
-                and immersive world-building.
-
-                Currently working as a Unity Programmer and
-                Lead Map Designer on the Laila Majnu Project.
-
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="assets/resume/AbhijeetPatilResume.pdf" class="btn">
-                    Download Resume
-                </a>
-
-                <a href="#contact" class="btn-outline">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img src="assets/profile/profile.png"
-                alt="Abhijeet Patil">
-
-        </div>
-
-    </section>
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="section" id="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <p style="max-width:900px;margin:auto;text-align:center;line-height:1.9;color:#c7c7c7;">
-
-            Hello! I'm Abhijeet Patil, a Unity Developer and World Designer
-            from India specializing in simulation games, gameplay systems,
-            vehicle mechanics, Android game development, and large-scale
-            open-world map design.
-
-            Over the years, I have worked on multiple simulation projects
-            including tractor simulators, truck simulators, car driving games,
-            and immersive open-world environments.
-
-            Currently, I contribute to the Laila Majnu Project as a
-            Unity Programmer and Lead Map Designer.
-
-        </p>
-
-    </section>
-
-    <!-- ================= FEATURED WORK ================= -->
-
-    <section class="section" id="featured">
-
-        <h2 class="section-title">Featured Work</h2>
-
-        <div class="gallery">
-
-            <div class="card">
-                <img src="assets/featured/village.png" alt="">
-                <h3>Village Area From My Tractor Game</h3>
-            </div>
-            
-            <div class="card">
-                <img src="assets/featured/greater-west-city.png" alt="">
-                <h3>Greater West City</h3>
-            </div>
-
-            <div class="card">
-                <img src="assets/featured/city-road.png" alt="">
-                <h3> Market Road Greater West</h3>
-            </div>
-
-            <div class="card">
-                <img src="assets/featured/bus-terminal.png" alt="">
-                <h3>Bus Terminal From Laila Majnu Game </h3>
-            </div>
-
-            <div class="card">
-                <img src="assets/featured/highway.png" alt="">
-                <h3>Highways From Laila Majnu Game </h3>
-            </div>
-
-            <div class="card">
-                <img src="assets/featured/statue.png" alt="">
-                <h3>Landmarks From Laila Majnu Game </h3>
-            </div>
-
-            <div class="card">
-                <img src="assets/featured/apartment.png" alt="">
-                <h3>Apartment Area From Laila Majnu Game </h3>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= SKILLS ================= -->
-
-    <section class="section" id="skills">
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <img src="assets/icons/unity.svg" alt="Unity">
-                <h3>Unity</h3>
-            </div>
-
-            <div class="skill-card">
-                <img src="assets/icons/csharp.svg" alt="C#">
-                <h3>C# Programming</h3>
-            </div>
-
-            <div class="skill-card">
-                <img src="assets/icons/android.svg" alt="Android">
-                <h3>Android Development</h3>
-            </div>
-
-            <div class="skill-card">
-                <img src="assets/icons/blender.svg" alt="Blender">
-                <h3>Blender</h3>
-            </div>
-
-            <div class="skill-card">
-                <img src="assets/icons/photoshop.svg" alt="Photoshop">
-                <h3>Photoshop</h3>
-            </div>
-
-            <div class="skill-card">
-                <img src="assets/icons/github.svg" alt="GitHub">
-                <h3>Git & GitHub</h3>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= EXPERIENCE ================= -->
-
-    <section class="section" id="experience">
-
-        <h2 class="section-title">Experience Timeline</h2>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <h3>2022-2023</h3>
-                <h4>Unity Programmer</h4>
-                <p> Start game development Journey as a passion</p>
-      
-            </div>
-
-              <div class="timeline-item">
-                <h3>2024</h3>
-                <h4>Unity Developer</h4>
-                <p> Start work On Indian Tractor Off-Roading</p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2025</h3>
-                <h4>Founder & Unity Developer</h4>
-                 <p> Total 3 games Published on Play Store Under </p>
-                <p>ADVENTUROUS MIND GAMES</p>
-            </div>
-
-            <div class="timeline-item">
-                <h3>2026-Present</h3>
-                <h4>Lead Map Designer & Unity Dev</h4>
-                <p>Work At ITS A GAME STUDIO</p>
-                <p> Currently Working On Laila Majnu Project</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section class="section" id="projects">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="project-grid">
-
-              <div class="project-card">
-
-                <img src="assets/projects/car-game.png" alt="Car Simulator">
-
-                <div class="project-content">
-
-                    <h3>GT Car Stunt: Mega Ramps</h3>
-
-                    <p>
-                    Welcome to GT Car Stunt: Mega Ramps,
-                    the ultimate car stunt game designed for speed demons and daredevils.
-                     Are you ready for the most extreme car driving simulator experience on mobile?
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Technical Game Architect &amp; Unity
+                        Developer at Its A Game Studio</p>
+
+                    <h1 id="hero-title" class="hero-title">Abhijeet<br><span>Patil</span></h1>
+
+                    <p class="hero-role">
+                        <span>Technical Game Architect</span> <i aria-hidden="true">/</i>
+                        <span>Unity Developer</span> <i aria-hidden="true">/</i>
+                        <span>Open-World Map Designer</span>
                     </p>
 
-                </div>
-
-            </div>
-
-            <div class="project-card">
-
-                <img src="assets/projects/tractor-game.png" alt="Tractor Simulator">
-
-                <div class="project-content">
-
-                    <h3>Indian Tractor Off-Roading</h3>
-
-                    <p>
-                    Welcome to Indian Tractor Off-Roading ! Drive powerful tractors, tackle challenging terrains,
-                     and transport goods across scenic rural landscapes. With realistic physics, customizable vehicles, 
-                     and engaging missions, this simulator offers the ultimate farming experience
+                    <p class="hero-intro">
+                        I plan and build mobile games in Unity, from game architecture, vehicle physics and AI
+                        traffic to full open-world cities. Right now I'm the Technical Game Architect on
+                        <strong>Laila Majnu</strong>, an open-world crime game for Android.
                     </p>
 
+                    <div class="hero-actions">
+                        <a href="#work" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+                        <a href="assets/resume/AbhijeetPatilResume.pdf" class="btn btn-link" download>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16" /></svg>
+                            Download Resume
+                        </a>
+                    </div>
                 </div>
 
+                <figure class="hero-portrait">
+                    <div class="portrait-frame">
+                        <img src="assets/optimized/profile-640.webp" alt="Portrait of Abhijeet Patil" width="640"
+                            height="640" fetchpriority="high">
+                    </div>
+                    <figcaption class="portrait-tag">
+                        <span class="mono">Now building</span>
+                        <strong>Laila Majnu</strong>
+                    </figcaption>
+                </figure>
             </div>
 
-            <div class="project-card">
+            <div class="container">
+                <dl class="hero-stats">
+                    <div>
+                        <dt>Downloads on Indian Tractor Off-Roading</dt>
+                        <dd>90K+</dd>
+                    </div>
+                    <div>
+                        <dt>Games published on Google Play</dt>
+                        <dd>3</dd>
+                    </div>
+                    <div>
+                        <dt>Building in Unity since</dt>
+                        <dd>2022</dd>
+                    </div>
+                    <div>
+                        <dt>Open-world city in development</dt>
+                        <dd>1</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
 
-                <img src="assets/projects/laila-majnu.png" alt="Laila Majnu">
+        <!-- ================= ABOUT ================= -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container about">
+                <header class="section-head">
+                    <p class="kicker">01 / About</p>
+                    <h2 id="about-title">Game architect who thinks in systems and streets</h2>
+                </header>
 
-                <div class="project-content">
-
-                    <h3>Laila Majnu</h3>
-
+                <div class="about-body reveal">
                     <p>
-                    Welcome to Laila Majnu: Streets of Crime.
- 
-                    Enter a living open-world city where love, loyalty,
-                     and power collide. Step into the story of Laila and Majnu as they rise through the dangerous streets,
-                      building their influence and facing rival gangs.
+                        I'm Abhijeet Patil, a Technical Game Architect (TGA) and Unity Developer from India. I started making games in 2022 and
+                        have spent most of that time on simulation and driving games for Android: tractors,
+                        cars, traffic and the worlds they move through.
                     </p>
-
+                    <p>
+                        As founder of <strong>Adventurous Mind Games</strong>, I built and shipped
+                        <strong>Indian Tractor Off-Roading</strong>, which has passed 90,000 downloads on
+                        Google Play. Alongside that I've taken on freelance Unity work, including a real-time
+                        multiplayer WebGL game and bug fixing for released titles.
+                    </p>
+                    <p>
+                        Today I work at <strong>Its A Game Studio</strong> as Technical Game Architect and Unity
+                        Developer on <strong>Laila Majnu</strong>, where I shape the game's technical structure and
+                        plan the districts, road networks and gameplay spaces of a large open-world city.
+                    </p>
                 </div>
 
+                <ul class="about-facts reveal" aria-label="Quick facts">
+                    <li><span class="mono">Based in</span> India</li>
+                    <li><span class="mono">Engine</span> Unity (C#)</li>
+                    <li><span class="mono">Platforms</span> Android, WebGL</li>
+                    <li><span class="mono">Focus</span> Open worlds, vehicles, gameplay systems</li>
+                </ul>
             </div>
+        </section>
 
+        <!-- ================= FEATURED WORK ================= -->
+        <section class="section section-alt" id="work" aria-labelledby="work-title">
+            <div class="container">
+                <header class="section-head section-head-row">
+                    <div>
+                        <p class="kicker">02 / Featured Work</p>
+                        <h2 id="work-title">Worlds I've built</h2>
+                    </div>
+                    <p class="section-note">In-engine screenshots from Laila Majnu and Indian Tractor Off-Roading.
+                        Tap any image to view it full screen.</p>
+                </header>
+
+                <ul class="gallery" role="list">
+                    <li class="gallery-item gallery-item-wide reveal">
+                        <button type="button" class="gallery-btn" data-full="assets/optimized/greater-west-city-2400.webp"
+                            data-caption="Greater West City · Laila Majnu">
+                            <img src="assets/optimized/greater-west-city-960.webp"
+                                alt="Majestic Gate and a domed red-brick building beside a city road in Greater West City"
+                                width="960" height="481" loading="lazy" decoding="async">
+                            <span class="gallery-meta"><span class="mono">Laila Majnu</span>Greater West City</span>
+                        </button>
+                    </li>
+                    <li class="gallery-item reveal">
+                        <button type="button" class="gallery-btn" data-full="assets/optimized/city-road-2400.webp"
+                            data-caption="Market Road, Greater West · Laila Majnu">
+                            <img src="assets/optimized/city-road-960.webp" alt="Market road running through Greater West"
+                                width="960" height="481" loading="lazy" decoding="async">
+                            <span class="gallery-meta"><span class="mono">Laila Majnu</span>Market Road, Greater West</span>
+                        </button>
+                    </li>
+                    <li class="gallery-item reveal">
+                        <button type="button" class="gallery-btn" data-full="assets/optimized/highway-2400.webp"
+                            data-caption="Highway network · Laila Majnu">
+                            <img src="assets/optimized/highway-960.webp" alt="Highway network connecting city districts"
+                                width="960" height="481" loading="lazy" decoding="async">
+                            <span class="gallery-meta"><span class="mono">Laila Majnu</span>Highway network</span>
+                        </button>
+                    </li>
+                    <li class="gallery-item reveal">
+                        <button type="button" class="gallery-btn" data-full="assets/optimized/bus-terminal-2400.webp"
+                            data-caption="Bus terminal · Laila Majnu">
+                            <img src="assets/optimized/bus-terminal-960.webp" alt="City bus terminal" width="960"
+                                height="481" loading="lazy" decoding="async">
+                            <span class="gallery-meta"><span class="mono">Laila Majnu</span>Bus terminal</span>
+                        </button>
+                    </li>
+                    <li class="gallery-item reveal">
+                        <button type="button" class="gallery-btn" data-full="assets/optimized/statue-2400.webp"
+                            data-caption="City landmark · Laila Majnu">
+                            <img src="assets/optimized/statue-960.webp" alt="Statue landmark in the city" width="960"
+                                height="481" loading="lazy" decoding="async">
+                            <span class="gallery-meta"><span class="mono">Laila Majnu</span>City landmark</span>
+                        </button>
+                    </li>
+                    <li class="gallery-item reveal">
+                        <button type="button" class="gallery-btn" data-full="assets/optimized/apartment-2400.webp"
+                            data-caption="Apartment district · Laila Majnu">
+                            <img src="assets/optimized/apartment-960.webp" alt="Residential apartment district"
+                                width="960" height="481" loading="lazy" decoding="async">
+                            <span class="gallery-meta"><span class="mono">Laila Majnu</span>Apartment district</span>
+                        </button>
+                    </li>
+                    <li class="gallery-item gallery-item-wide reveal">
+                        <button type="button" class="gallery-btn" data-full="assets/optimized/village-2400.webp"
+                            data-caption="Village area · Indian Tractor Off-Roading">
+                            <img src="assets/optimized/village-960.webp" alt="Village area from Indian Tractor Off-Roading"
+                                width="960" height="462" loading="lazy" decoding="async">
+                            <span class="gallery-meta"><span class="mono">Indian Tractor Off-Roading</span>Village area</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS ================= -->
+        <section class="section" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="kicker">03 / Technical Skills</p>
+                    <h2 id="skills-title">What I work with</h2>
+                </header>
+
+                <div class="skills">
+                    <article class="skill-group reveal">
+                        <h3><span class="mono">A</span> Game Development</h3>
+                        <ul class="chips">
+                            <li><img src="assets/icons/unity.svg" alt="" width="16" height="16">Unity Engine</li>
+                            <li><img src="assets/icons/csharp.svg" alt="" width="16" height="16">C#</li>
+                            <li>Gameplay Programming</li>
+                            <li><img src="assets/icons/android.svg" alt="" width="16" height="16">Mobile Game Development</li>
+                            <li>Unity Editor Tools</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group reveal">
+                        <h3><span class="mono">B</span> Game Architecture</h3>
+                        <ul class="chips">
+                            <li>Game Systems Architecture</li>
+                            <li>Optimisation</li>
+                            <li>AI Systems</li>
+                            <li>Vehicle Systems</li>
+                            <li>Save/Load Systems</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group reveal">
+                        <h3><span class="mono">C</span> Environment &amp; Level Design</h3>
+                        <ul class="chips">
+                            <li>Open-World Map Design</li>
+                            <li>Road Network Design</li>
+                            <li>Environment Design</li>
+                            <li>World Building</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group reveal">
+                        <h3><span class="mono">D</span> Online &amp; Monetisation</h3>
+                        <ul class="chips">
+                            <li>Mirror Networking</li>
+                            <li>Photon</li>
+                            <li>Firebase</li>
+                            <li>AdMob</li>
+                            <li>Unity IAP</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-group reveal">
+                        <h3><span class="mono">E</span> Tools</h3>
+                        <ul class="chips">
+                            <li><img src="assets/icons/blender.svg" alt="" width="16" height="16">Blender</li>
+                            <li><img src="assets/icons/github.svg" alt="" width="16" height="16">Git &amp; GitHub</li>
+                            <li>Visual Studio</li>
+                            <li><img src="assets/icons/photoshop.svg" alt="" width="16" height="16">Photoshop</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EXPERIENCE ================= -->
+        <section class="section section-alt" id="experience" aria-labelledby="experience-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="kicker">04 / Professional Experience</p>
+                    <h2 id="experience-title">Where I've worked</h2>
+                </header>
+
+                <ol class="timeline">
+                    <li class="job reveal">
+                        <div class="job-logo">
+                            <img src="assets/optimized/logo-itsagame.webp" alt="Its A Game Studio logo" width="56"
+                                height="56" loading="lazy">
+                        </div>
+                        <div class="job-body">
+                            <div class="job-head">
+                                <div>
+                                    <h3>Technical Game Architect (TGA) &amp; Unity Developer</h3>
+                                    <p class="job-company">Its A Game Studio</p>
+                                </div>
+                                <p class="job-period mono">2026 – Present</p>
+                            </div>
+                            <ul class="job-points">
+                                <li>Technical Game Architect on <strong>Laila Majnu</strong>, an Android open-world
+                                    crime game, shaping how its game systems fit together.</li>
+                                <li>Lead the open-world map design for the game's city.</li>
+                                <li>Plan and build city districts including Greater West City, North Vecora, Coast
+                                    Montario and Udyognagar.</li>
+                                <li>Design the road network and city infrastructure: highways, market roads, terminals
+                                    and landmarks.</li>
+                                <li>Develop gameplay features and environments in Unity alongside the map work.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Unity</li><li>C#</li><li>Android</li><li>Open-World Design</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-logo">
+                            <img src="assets/optimized/logo-adventurousmind.webp" alt="Adventurous Mind Games logo"
+                                width="56" height="56" loading="lazy">
+                        </div>
+                        <div class="job-body">
+                            <div class="job-head">
+                                <div>
+                                    <h3>Founder &amp; Lead Unity Developer</h3>
+                                    <p class="job-company">Adventurous Mind Games</p>
+                                </div>
+                                <p class="job-period mono">From Sep 2023</p>
+                            </div>
+                            <ul class="job-points">
+                                <li>Built <strong>Indian Tractor Off-Roading</strong>, which has passed 90,000
+                                    downloads on Google Play.</li>
+                                <li>Published three games on Google Play under the studio.</li>
+                                <li>Built vehicle systems in Unity C# with Vehicle Physics for realistic driving.</li>
+                                <li>Created AI traffic with lane logic, obstacle detection and dynamic pathfinding.</li>
+                                <li>Integrated AdMob (rewarded, interstitial, banner) and Unity IAP with restore
+                                    purchases, and wrote custom Unity Editor tools to speed up production.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Unity</li><li>C#</li><li>Vehicle Physics</li><li>AdMob</li><li>Unity IAP</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="job reveal">
+                        <div class="job-logo job-logo-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12" /></svg>
+                        </div>
+                        <div class="job-body">
+                            <div class="job-head">
+                                <div>
+                                    <h3>Freelance Unity Developer</h3>
+                                    <p class="job-company">Independent</p>
+                                </div>
+                                <p class="job-period mono">From Aug 2022</p>
+                            </div>
+                            <ul class="job-points">
+                                <li>Developed a crypto-based penalty shootout game for WebGL with real-time
+                                    multiplayer using Mirror Networking and Edgegap servers.</li>
+                                <li>Worked with NightScream Studio to fix gameplay and performance bugs in their
+                                    released titles.</li>
+                                <li>Delivered Unity projects for clients on web and mobile, focusing on performance,
+                                    network sync and polished gameplay.</li>
+                            </ul>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Unity</li><li>C#</li><li>WebGL</li><li>Mirror</li><li>Edgegap</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS ================= -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="kicker">05 / Projects</p>
+                    <h2 id="projects-title">Games I've worked on</h2>
+                </header>
+
+                <!-- Featured: Laila Majnu -->
+                <article class="feature reveal" aria-labelledby="lm-title">
+                    <div class="feature-media">
+                        <img src="assets/optimized/laila-majnu-800.webp" alt="Laila Majnu: Streets of Crime key art"
+                            width="800" height="800" loading="lazy" decoding="async">
+                        <img src="assets/optimized/highway-960.webp" alt="Highway network in Laila Majnu" width="960"
+                            height="481" loading="lazy" decoding="async">
+                        <img src="assets/optimized/bus-terminal-960.webp" alt="Bus terminal in Laila Majnu" width="960"
+                            height="481" loading="lazy" decoding="async">
+                    </div>
+
+                    <div class="feature-body">
+                        <div class="feature-top">
+                            <img class="feature-logo" src="assets/optimized/logo-lailamajnu.webp" alt="" width="48"
+                                height="48" loading="lazy">
+                            <span class="badge badge-live">Live on Google Play</span>
+                        </div>
+
+                        <p class="kicker">Featured project</p>
+                        <h3 id="lm-title">Laila Majnu: Streets of Crime</h3>
+                        <p class="feature-intro">
+                            An open-world action and crime game set in a living city. I work on it as Technical Game
+                            Architect and Unity Developer, shaping the city players drive, fight and explore in.
+                        </p>
+
+                        <dl class="spec">
+                            <div><dt>Studio</dt><dd>Its A Game Studio</dd></div>
+                            <div><dt>Engine</dt><dd>Unity</dd></div>
+                            <div><dt>Platform</dt><dd>Android</dd></div>
+                            <div><dt>Genre</dt><dd>Open-World Action / Crime</dd></div>
+                            <div class="spec-wide"><dt>My role</dt><dd>Technical Game Architecture, Unity Development,
+                                    Open-World Map Design</dd></div>
+                        </dl>
+
+                        <div class="districts">
+                            <p class="mono">City districts</p>
+                            <ul>
+                                <li>Greater West City</li>
+                                <li>North Vecora</li>
+                                <li>Coast Montario</li>
+                                <li>Udyognagar</li>
+                            </ul>
+                        </div>
+
+                        <ul class="feature-points">
+                            <li><strong>Open-world environments</strong> Districts with their own layout and look,
+                                from markets to apartment blocks.</li>
+                            <li><strong>Roads and infrastructure</strong> Highways, city streets, junctions and a
+                                bus terminal that link the districts.</li>
+                            <li><strong>Vehicles and transport</strong> Road layouts built around driving and
+                                public transport.</li>
+                            <li><strong>Gameplay spaces</strong> Landmarks and areas designed for missions and
+                                exploration.</li>
+                        </ul>
+
+                        <div class="feature-actions">
+                            <a class="btn btn-primary"
+                                href="https://play.google.com/store/apps/details?id=com.ItsAGameStudio.LailaMajnu"
+                                target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M4.5 2.8 14 12l-9.5 9.2a1.5 1.5 0 0 1-.5-1.1V3.9c0-.4.2-.8.5-1.1Zm10.9 7.8 2.7-2.6 3.2 1.8c1 .6 1 2 0 2.6l-3.2 1.8-2.7-2.6Zm-1 2.4 2.4 2.4L6 21.3l8.4-8.3Zm0-2L6 2.7l10.8 5.9L14.4 11Z"/></svg>
+                                View on Google Play
+                            </a>
+                            <a class="btn btn-ghost" href="#work">See screenshots</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Other projects -->
+                <div class="project-grid">
+                    <article class="project reveal">
+                        <div class="project-thumb">
+                            <img src="assets/optimized/tractor-game-800.webp"
+                                alt="Indian Tractor Off-Roading game artwork" width="800" height="800" loading="lazy"
+                                decoding="async">
+                        </div>
+                        <div class="project-body">
+                            <span class="badge">Released · 90K+ downloads</span>
+                            <h3>Indian Tractor Off-Roading</h3>
+                            <p>Drive tractors across rural terrain and haul goods through village roads. Built
+                                with realistic vehicle physics, customisable tractors and mission-based play.</p>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Unity</li><li>C#</li><li>Vehicle Physics</li><li>Android</li>
+                            </ul>
+                            <p class="project-foot mono">Adventurous Mind Games · 2024</p>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb">
+                            <img src="assets/optimized/car-game-800.webp" alt="GT Car Stunt: Mega Ramps game artwork"
+                                width="519" height="465" loading="lazy" decoding="async">
+                        </div>
+                        <div class="project-body">
+                            <span class="badge">Project details</span>
+                            <h3>GT Car Stunt: Mega Ramps</h3>
+                            <p>A car stunt game built around speed, mega ramps and high-risk jumps, with arcade
+                                driving tuned for mobile.</p>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Unity</li><li>C#</li><li>Android</li>
+                            </ul>
+                            <p class="project-foot mono">Mobile · Stunt driving</p>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-thumb project-thumb-art" aria-hidden="true">
+                            <svg viewBox="0 0 120 80">
+                                <rect x="20" y="14" width="80" height="44" rx="2" />
+                                <path d="M20 58h80M40 14v44M80 14v44" />
+                                <circle cx="60" cy="66" r="6" />
+                            </svg>
+                        </div>
+                        <div class="project-body">
+                            <span class="badge">Client project</span>
+                            <h3>Multiplayer Penalty Shootout</h3>
+                            <p>A crypto-based penalty shootout for WebGL with real-time multiplayer, using Mirror
+                                Networking and dedicated Edgegap servers.</p>
+                            <ul class="tags" aria-label="Technologies">
+                                <li>Unity</li><li>Mirror</li><li>Edgegap</li><li>WebGL</li>
+                            </ul>
+                            <p class="project-foot mono">Freelance · Web</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ACHIEVEMENTS ================= -->
+        <section class="section section-alt" id="achievements" aria-labelledby="achievements-title">
+            <div class="container">
+                <header class="section-head">
+                    <p class="kicker">06 / Achievements</p>
+                    <h2 id="achievements-title">Milestones</h2>
+                </header>
+
+                <ul class="milestones">
+                    <li class="milestone reveal">
+                        <p class="milestone-num">90K+</p>
+                        <h3>Downloads</h3>
+                        <p>Indian Tractor Off-Roading on Google Play.</p>
+                    </li>
+                    <li class="milestone reveal">
+                        <p class="milestone-num">3</p>
+                        <h3>Games published</h3>
+                        <p>Shipped on Google Play under Adventurous Mind Games.</p>
+                    </li>
+                    <li class="milestone reveal">
+                        <p class="milestone-num">TGA</p>
+                        <h3>Technical Game Architect</h3>
+                        <p>Technical Game Architect on Laila Majnu at Its A Game Studio.</p>
+                    </li>
+                    <li class="milestone reveal">
+                        <p class="milestone-num">4+</p>
+                        <h3>Years in Unity</h3>
+                        <p>Building games in Unity and C# since 2022.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section contact" id="contact" aria-labelledby="contact-title">
+            <div class="container contact-inner">
+                <div class="contact-copy reveal">
+                    <p class="kicker">07 / Contact</p>
+                    <h2 id="contact-title">Let's build something worth playing</h2>
+                    <p>Open to game architecture, Unity development and open-world design work. The quickest
+                        way to reach me is email.</p>
+                    <a class="contact-email" href="mailto:abhijeetpatildev06@gmail.com">abhijeetpatildev06@gmail.com</a>
+                </div>
+
+                <ul class="socials reveal">
+                    <li>
+                        <a href="https://github.com/AbhijeetPatilDev06" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+                            <span>GitHub</span><span class="mono">AbhijeetPatilDev06</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/abhijeet-dev/" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon-fill"><path d="M20.4 2H3.6C2.7 2 2 2.7 2 3.6v16.8c0 .9.7 1.6 1.6 1.6h16.8c.9 0 1.6-.7 1.6-1.6V3.6c0-.9-.7-1.6-1.6-1.6ZM8 19H5V9.5h3V19ZM6.5 8.2a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5ZM19 19h-3v-4.6c0-1.1 0-2.5-1.5-2.5S12.8 13 12.8 14.3V19h-3V9.5h2.9v1.3c.4-.8 1.4-1.6 2.9-1.6 3 0 3.6 2 3.6 4.6V19Z"/></svg>
+                            <span>LinkedIn</span><span class="mono">abhijeet-dev</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/imdevlucky" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" class="icon-fill"/></svg>
+                            <span>Instagram</span><span class="mono">@imdevlucky</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:abhijeetpatildev06@gmail.com">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                            <span>Email</span><span class="mono">Say hello</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>© <span id="year">2026</span> Abhijeet Patil · Technical Game Architect &amp; Unity Developer</p>
+            <a href="#home" class="mono">Back to top ↑</a>
         </div>
-
-    </section>
-
-    <!-- ================= ACHIEVEMENTS ================= -->
-
-    <section class="section" id="achievements">
-
-        <h2 class="section-title">Achievements</h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <h3>4+</h3>
-                <p>Years Learning Unity</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>10+</h3>
-                <p>Projects Developed</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>100+</h3>
-                <p>Game Systems Built</p>
-            </div>
-
-            <div class="skill-card">
-                <h3>Large Scale</h3>
-                <p>Open World Maps Designed</p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- ================= CONTACT ================= -->
-
-    <section class="section" id="contact">
-
-        <h2 class="section-title">Let's Connect</h2>
-
-        <div class="contact-grid">
-
-            <a href="https://github.com/AbhijeetPatilDev06" target="_blank">
-                <i class="fab fa-github"></i><br><br>
-                GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/abhijeet-dev/" target="_blank">
-                <i class="fab fa-linkedin"></i><br><br>
-                LinkedIn
-            </a>
-
-            <a href="https://www.instagram.com/imdevlucky" target="_blank">
-                <i class="fab fa-instagram"></i><br><br>
-                Instagram
-            </a>
-
-            <a href="mailto:abhijeetpatildev06@gmail.com">
-                <i class="fas fa-envelope"></i><br><br>
-                Email
-            </a>
-
-        </div>
-
-    </section>
-
-    <!-- ================= FOOTER ================= -->
-
-    <footer>
-
-        © 2026 Abhijeet Patil |
-        Unity Developer • World Designer • Map Creator
-
     </footer>
 
-    <script src="script.js"></script>
+    <!-- ================= LIGHTBOX ================= -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+        <button type="button" class="lb-btn lb-close" aria-label="Close viewer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+        </button>
+        <button type="button" class="lb-btn lb-prev" aria-label="Previous image">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7" /></svg>
+        </button>
+        <figure class="lb-figure">
+            <img class="lb-img" alt="">
+            <figcaption class="lb-caption"><span class="lb-text"></span><span class="lb-count mono"></span></figcaption>
+        </figure>
+        <button type="button" class="lb-btn lb-next" aria-label="Next image">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" /></svg>
+        </button>
+    </div>
 
+    <script src="script.js" defer></script>
 </body>
 
 </html>
-```
